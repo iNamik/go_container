@@ -3,7 +3,7 @@
 */
 package ring
 
-import "github.com/iNamik/container/queue"
+import "github.com/iNamik/container.go/queue"
 
 // NewRing returns a new ring, which implements the inamik/container/queue/Queue interface
 func NewRing(capacity int) queue.Queue {

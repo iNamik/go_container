@@ -1,7 +1,7 @@
 GOROOT ?= $(shell printf 't:;@echo $$(GOROOT)\n' | gomake -f -)
 include $(GOROOT)/src/Make.inc
 
-TARG=github.com/iNamik/container/queue
+TARG=github.com/iNamik/container.go/queue
 
 GOFILES=\
 	impl.go\
