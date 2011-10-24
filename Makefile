@@ -1,21 +1,20 @@
 GOROOT ?= $(shell printf 't:;@echo $$(GOROOT)\n' | gomake -f -)
 include $(GOROOT)/src/Make.inc
 
-.PHONY: all install clean queue ring
+.PHONY: default all install clean nuke
 
-all: queue ring
+default: all
 
-queue:
-	gomake -C queue
+all: install
 
-ring:
-	gomake -C ring
-
-install: queue ring
-	gomake -C queue install
-	gomake -C ring  install
+install: 
+	$(MAKE) -C queue install
+	$(MAKE) -C ring  install
 
 clean:
-	gomake -C queue clean
-	gomake -C ring  clean
+	$(MAKE) -C queue clean
+	$(MAKE) -C ring  clean
 
+nuke:
+	$(MAKE) -C queue nuke
+	$(MAKE) -C ring  nuke

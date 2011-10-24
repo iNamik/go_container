@@ -4,6 +4,7 @@ include $(GOROOT)/src/Make.inc
 TARG=github.com/iNamik/container.go/ring
 
 GCIMPORTS+="-I ../"
+
 GOFILES=\
 	impl.go\
 	ring.go\
