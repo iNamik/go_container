@@ -1,4 +1,4 @@
-container.go
+go_container
 ============
 
 **Container Classes in Go**
@@ -7,7 +7,7 @@ container.go
 PACKAGES:
 --------
 
-### import "github.com/iNamik/container.go/queue"
+### import "github.com/iNamik/go_container/queue"
 
 The 'queue' package implements an unbounded FIFO with the following interface:
 
@@ -24,7 +24,7 @@ The 'queue' package implements an unbounded FIFO with the following interface:
 	}
 
 
-### import "github.com/iNamik/container.go/ring"
+### import "github.com/iNamik/go_container/ring"
 
 The 'ring' package implements a bounded FIFO using the 'queue' interface
 
@@ -34,15 +34,15 @@ INSTALL:
 
   To install the packages set manually
 
-	git clone https://github.com/iNamik/container.go
-	cd container.go
+	git clone https://github.com/iNamik/go_container
+	cd go_container
 	gomake
 	gomake install
 
   Or you can install each package via goinstall
 
-	goinstall github.com/iNamik/container.go/queue
-	goinstall github.com/iNamik/container.go/ring
+	goinstall github.com/iNamik/go_container/queue
+	goinstall github.com/iNamik/go_container/ring
 
 
 AUTHORS:
