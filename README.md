@@ -29,20 +29,20 @@ The 'queue' package implements an unbounded FIFO with the following interface:
 The 'ring' package implements a bounded FIFO using the 'queue' interface
 
 
+### import "github.com/iNamik/go_container/stack"
+
+The 'stack' package implements an unbounded FILO using the 'queue' interface
+
+
 INSTALL:
 --------
 
-  To install the packages set manually
+The packages are built using the Go tool.  Assuming you have correctly set the
+$GOPATH variable, you can run the folloing command(s):
 
-	git clone https://github.com/iNamik/go_container
-	cd go_container
-	gomake
-	gomake install
-
-  Or you can install each package via goinstall
-
-	goinstall github.com/iNamik/go_container/queue
-	goinstall github.com/iNamik/go_container/ring
+	go get github.com/iNamik/go_container/queue
+	go get github.com/iNamik/go_container/ring
+	go get github.com/iNamik/go_container/stack
 
 
 AUTHORS:
